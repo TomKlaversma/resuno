@@ -39,20 +39,62 @@ This is the **Resuno** website and brand project. Resuno is a high-end AI Archit
 
 ---
 
+## Internationalization (i18n) - CRITICAL
+
+**NEVER USE HARDCODED TEXT IN COMPONENTS**
+
+All user-facing text MUST use the i18n translation system:
+
+```typescript
+import { useTranslation } from "@/lib/i18n";
+
+export default function MyComponent() {
+  const { t } = useTranslation();
+
+  return <h1>{t.section.key}</h1>;
+}
+```
+
+### Translation Files Location
+* `/website/lib/i18n/translations.ts` - Main translation file
+* Contains both Dutch (nl) and English (en) translations
+* ALL new text must be added to BOTH languages
+
+### Adding New Translations
+
+1. Add the key to the `Translations` interface
+2. Add Dutch text to `translations.nl`
+3. Add English text to `translations.en`
+4. Use `t.yourKey` in components
+
+**Example:**
+```typescript
+// In translations.ts
+export interface Translations {
+  mySection: {
+    newText: string;
+  };
+}
+
+translations.nl.mySection.newText = "Nederlandse tekst";
+translations.en.mySection.newText = "English text";
+
+// In component
+<p>{t.mySection.newText}</p>
+```
+
+### Why This Matters
+* Supports Dutch/English language toggle
+* Centralizes all copy for easy updates
+* Prevents inconsistencies
+* Required for international expansion
+
 ## Content Guidelines
 
-### Messaging Examples (Always in Dutch)
-* ✅ "Van AI-chaos naar schaalbaar momentum"
-* ✅ "Volwassen architectuur zonder houtje-touwtje oplossingen"
-* ✅ "Wij bouwen de architectuur die jouw team versterkt"
-* ❌ "Enterprise-grade AI solutions"
-* ❌ "Cutting-edge technology"
-* ❌ "Digital transformation"
-
-### Brand Voice
+### Brand Voice (Applied in Translations)
 * **DO:** Be direct, concrete, and honest about pricing and capabilities
 * **DON'T:** Use Silicon Valley buzzwords or vague promises
-* **DO:** Use "wij" (we) to emphasize partnership
+* **DO:** Use "wij" (we) in Dutch, "we" in English to emphasize partnership
 * **DON'T:** Oversell or use hyperbole
 
 ---

@@ -4,15 +4,17 @@ import { motion } from "framer-motion";
 import { useState } from "react";
 import ThemeToggle from "./ThemeToggle";
 import LanguageToggle from "./LanguageToggle";
+import { useTranslation } from "@/lib/i18n";
 
 export default function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const { t } = useTranslation();
 
   const navItems = [
-    { name: "Home", href: "#" },
-    { name: "Diensten", href: "#diensten" },
-    { name: "Over Resuno", href: "#over" },
-    { name: "Contact", href: "#contact" },
+    { name: t.nav.home, href: "#" },
+    { name: t.nav.services, href: "#diensten" },
+    { name: t.nav.about, href: "#over" },
+    { name: t.nav.contact, href: "#contact" },
   ];
 
   return (
@@ -56,7 +58,7 @@ export default function Header() {
               whileTap={{ scale: 0.95 }}
               className="px-6 py-2 bg-primary dark:bg-accent text-white dark:text-gray-900 rounded-lg font-semibold hover:bg-primary-dark dark:hover:bg-accent/90 transition-colors"
             >
-              Boek een Scan
+              {t.nav.bookScan}
             </motion.a>
           </div>
 
@@ -118,7 +120,7 @@ export default function Header() {
               className="block mt-4 px-6 py-2 bg-primary dark:bg-accent text-white dark:text-gray-900 rounded-lg font-semibold text-center hover:bg-primary-dark dark:hover:bg-accent/90 transition-colors"
               onClick={() => setMobileMenuOpen(false)}
             >
-              Boek een Scan
+              {t.nav.bookScan}
             </a>
           </motion.div>
         )}
