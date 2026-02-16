@@ -1,29 +1,31 @@
 @import "tailwindcss";
 
 :root {
-  /* Light mode - Sand white backgrounds */
-  --background: #faf8f3;
-  --foreground: #2a1810;
-  --primary: #d97706;        /* Dark orange */
-  --primary-dark: #b45309;   /* Darker orange */
-  --accent: #fbbf24;         /* Yellow */
-  --brown-dark: #3e2723;     /* Super dark brown */
-  --brown-medium: #4e342e;
-  --sand-white: #faf8f3;
-  --sand-light: #fefdfb;
+  /* Light mode - Modern tech palette */
+  --background: #ffffff;
+  --foreground: #0f172a;     /* Slate 900 */
+  --primary: #3b82f6;        /* Blue 500 */
+  --primary-dark: #2563eb;   /* Blue 600 */
+  --accent: #06b6d4;         /* Cyan 500 */
+  --gray-50: #f8fafc;
+  --gray-100: #f1f5f9;
+  --gray-200: #e2e8f0;
+  --gray-800: #1e293b;
+  --gray-900: #0f172a;
 }
 
 .dark {
-  /* Dark mode - Dark brown backgrounds */
-  --background: #1a0f0a;
-  --foreground: #faf8f3;
-  --primary: #f59e0b;        /* Lighter orange for dark mode */
-  --primary-dark: #d97706;
-  --accent: #fbbf24;
-  --brown-dark: #0a0504;
-  --brown-medium: #1a0f0a;
-  --sand-white: #2a1810;
-  --sand-light: #3e2723;
+  /* Dark mode - Deep slate with vibrant accents */
+  --background: #0f172a;     /* Slate 900 */
+  --foreground: #f1f5f9;     /* Slate 100 - Light text */
+  --primary: #60a5fa;        /* Blue 400 - Brighter for dark mode */
+  --primary-dark: #3b82f6;   /* Blue 500 */
+  --accent: #22d3ee;         /* Cyan 400 - Vibrant on dark */
+  --gray-50: #1e293b;        /* Slate 800 */
+  --gray-100: #334155;       /* Slate 700 */
+  --gray-200: #475569;       /* Slate 600 */
+  --gray-800: #cbd5e1;       /* Slate 300 */
+  --gray-900: #f1f5f9;       /* Slate 100 */
 }
 
 @theme inline {
@@ -32,10 +34,10 @@
   --color-primary: var(--primary);
   --color-primary-dark: var(--primary-dark);
   --color-accent: var(--accent);
-  --color-brown-dark: var(--brown-dark);
-  --color-brown-medium: var(--brown-medium);
-  --color-sand-white: var(--sand-white);
-  --color-sand-light: var(--sand-light);
+  --color-gray-900: var(--gray-900);
+  --color-gray-800: var(--gray-800);
+  --color-gray-50: var(--gray-50);
+  --color-gray-100: var(--gray-100);
   --font-sans: var(--font-inter);
 }
 

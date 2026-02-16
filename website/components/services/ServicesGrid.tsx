@@ -73,7 +73,7 @@ const itemVariants = {
 
 export default function ServicesGrid() {
   return (
-    <section id="diensten" className="py-24 bg-sand-white dark:bg-brown-dark">
+    <section id="diensten" className="py-24 bg-gray-50 dark:bg-gray-900">
       <div className="container mx-auto px-6">
         {/* Section header */}
         <motion.div
@@ -83,10 +83,10 @@ export default function ServicesGrid() {
           transition={{ duration: 0.6 }}
           className="text-center mb-16"
         >
-          <h2 className="text-4xl md:text-5xl font-bold text-brown-dark dark:text-sand-white mb-6">
+          <h2 className="text-4xl md:text-5xl font-bold text-gray-900 dark:text-gray-50 mb-6">
             Van chaos naar <span className="text-primary dark:text-accent">controle</span>
           </h2>
-          <p className="text-xl text-brown-dark/70 dark:text-sand-white/70 max-w-3xl mx-auto">
+          <p className="text-xl text-gray-900/70 dark:text-gray-50/70 max-w-3xl mx-auto">
             Drie pakketten, één doel: jouw AI-stack volwassen maken. Kies het niveau dat past bij jouw ambities.
           </p>
         </motion.div>
@@ -109,7 +109,7 @@ export default function ServicesGrid() {
                 ${
                   service.highlight
                     ? "border-primary dark:border-accent bg-gradient-to-br from-accent/10 to-primary/10 dark:from-accent/20 dark:to-primary/20 shadow-xl shadow-primary/10 dark:shadow-accent/10"
-                    : "border-brown-dark/20 dark:border-sand-white/20 bg-sand-light dark:bg-brown-medium hover:border-primary dark:hover:border-accent"
+                    : "border-gray-900/20 dark:border-gray-50/20 bg-gray-100 dark:bg-gray-800 hover:border-primary dark:hover:border-accent"
                 }
                 transition-all duration-300
               `}
@@ -117,7 +117,7 @@ export default function ServicesGrid() {
               {/* Highlight badge */}
               {service.highlight && (
                 <div className="absolute -top-3 left-8">
-                  <span className="px-4 py-1 bg-primary dark:bg-accent text-white dark:text-brown-dark text-xs font-semibold rounded-full shadow-lg">
+                  <span className="px-4 py-1 bg-primary dark:bg-accent text-white dark:text-gray-900 text-xs font-semibold rounded-full shadow-lg">
                     MEEST GEKOZEN
                   </span>
                 </div>
@@ -125,15 +125,15 @@ export default function ServicesGrid() {
 
               {/* Service header */}
               <div className="mb-6">
-                <h3 className="text-2xl font-bold text-brown-dark dark:text-sand-white mb-2">{service.name}</h3>
+                <h3 className="text-2xl font-bold text-gray-900 dark:text-gray-50 mb-2">{service.name}</h3>
                 <div className="flex items-baseline gap-2 mb-2">
                   <span className="text-3xl font-bold text-primary dark:text-accent">{service.price}</span>
                 </div>
-                <p className="text-sm text-brown-dark/60 dark:text-sand-white/60">{service.duration}</p>
+                <p className="text-sm text-gray-900/60 dark:text-gray-50/60">{service.duration}</p>
               </div>
 
               {/* Description */}
-              <p className="text-brown-dark/80 dark:text-sand-white/80 mb-6 leading-relaxed">{service.description}</p>
+              <p className="text-gray-900/80 dark:text-gray-50/80 mb-6 leading-relaxed">{service.description}</p>
 
               {/* Features list */}
               <ul className="space-y-3 mb-8">
@@ -150,7 +150,7 @@ export default function ServicesGrid() {
                         clipRule="evenodd"
                       />
                     </svg>
-                    <span className="text-sm text-brown-dark/80 dark:text-sand-white/80">{feature}</span>
+                    <span className="text-sm text-gray-900/80 dark:text-gray-50/80">{feature}</span>
                   </li>
                 ))}
               </ul>
@@ -164,8 +164,8 @@ export default function ServicesGrid() {
                   block w-full text-center py-3 px-6 rounded-lg font-semibold transition-all
                   ${
                     service.highlight
-                      ? "bg-primary dark:bg-accent text-white dark:text-brown-dark hover:bg-primary-dark dark:hover:bg-accent/90 shadow-lg shadow-primary/30 dark:shadow-accent/30"
-                      : "bg-brown-dark dark:bg-sand-white text-sand-white dark:text-brown-dark hover:bg-brown-dark/90 dark:hover:bg-sand-white/90"
+                      ? "bg-primary dark:bg-accent text-white dark:text-gray-900 hover:bg-primary-dark dark:hover:bg-accent/90 shadow-lg shadow-primary/30 dark:shadow-accent/30"
+                      : "bg-gray-900 dark:bg-gray-50 text-gray-50 dark:text-gray-900 hover:bg-gray-900/90 dark:hover:bg-gray-50/90"
                   }
                 `}
               >
@@ -183,7 +183,7 @@ export default function ServicesGrid() {
           transition={{ duration: 0.6, delay: 0.4 }}
           className="mt-16 text-center"
         >
-          <p className="text-brown-dark/70 dark:text-sand-white/70 mb-4">
+          <p className="text-gray-900/70 dark:text-gray-50/70 mb-4">
             Niet zeker welk pakket bij jou past? Geen probleem.
           </p>
           <a

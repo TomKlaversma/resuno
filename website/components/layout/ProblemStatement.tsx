@@ -23,7 +23,7 @@ const problems = [
 
 export default function ProblemStatement() {
   return (
-    <section className="py-24 bg-gradient-to-br from-sand-light to-sand-white dark:from-brown-medium dark:to-brown-dark">
+    <section className="py-24 bg-gradient-to-br from-gray-100 to-gray-50 dark:from-gray-800 dark:to-gray-900">
       <div className="container mx-auto px-6">
         {/* Section header */}
         <motion.div
@@ -33,10 +33,10 @@ export default function ProblemStatement() {
           transition={{ duration: 0.6 }}
           className="text-center mb-16"
         >
-          <h2 className="text-4xl md:text-5xl font-bold text-brown-dark dark:text-sand-white mb-6">
+          <h2 className="text-4xl md:text-5xl font-bold text-gray-900 dark:text-gray-50 mb-6">
             Herken je dit?
           </h2>
-          <p className="text-xl text-brown-dark/70 dark:text-sand-white/70 max-w-3xl mx-auto">
+          <p className="text-xl text-gray-900/70 dark:text-gray-50/70 max-w-3xl mx-auto">
             De meeste bedrijven experimenteren met AI. Maar zonder architectuur wordt het al snel een duur, chaotisch experiment.
           </p>
         </motion.div>
@@ -50,10 +50,10 @@ export default function ProblemStatement() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.6, delay: index * 0.1 }}
-              className="bg-sand-white dark:bg-brown-medium rounded-xl p-6 shadow-lg hover:shadow-xl transition-shadow border border-brown-dark/10 dark:border-sand-white/10"
+              className="bg-gray-50 dark:bg-gray-800 rounded-xl p-6 shadow-lg hover:shadow-xl transition-shadow border border-gray-900/10 dark:border-gray-50/10"
             >
-              <h3 className="text-lg font-bold text-brown-dark dark:text-sand-white mb-2">{problem.title}</h3>
-              <p className="text-brown-dark/70 dark:text-sand-white/70 text-sm leading-relaxed">{problem.description}</p>
+              <h3 className="text-lg font-bold text-gray-900 dark:text-gray-50 mb-2">{problem.title}</h3>
+              <p className="text-gray-900/70 dark:text-gray-50/70 text-sm leading-relaxed">{problem.description}</p>
             </motion.div>
           ))}
         </div>
@@ -66,11 +66,11 @@ export default function ProblemStatement() {
           transition={{ duration: 0.6, delay: 0.5 }}
           className="mt-16 max-w-4xl mx-auto"
         >
-          <div className="bg-gradient-to-r from-primary to-accent dark:from-accent dark:to-primary rounded-2xl p-8 md:p-12 text-white dark:text-brown-dark shadow-2xl">
+          <div className="bg-gradient-to-r from-primary to-accent dark:from-accent dark:to-primary rounded-2xl p-8 md:p-12 text-white dark:text-gray-900 shadow-2xl">
             <h3 className="text-3xl font-bold mb-4">
               De oplossing? Volwassen architectuur.
             </h3>
-            <p className="text-lg mb-6 text-white/90 dark:text-brown-dark/90">
+            <p className="text-lg mb-6 text-white/90 dark:text-gray-900/90">
               Wij consolideren jouw AI-stack van 20+ tools naar 5-8 kerncomponenten. Met security als vangrail, niet als blokkade.
             </p>
             <ul className="space-y-3 mb-8">
@@ -81,10 +81,10 @@ export default function ProblemStatement() {
                 "Scalable software, geen plugin-wrappers",
               ].map((item, i) => (
                 <li key={i} className="flex items-start gap-3">
-                  <svg className="w-6 h-6 text-white dark:text-brown-dark mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                  <svg className="w-6 h-6 text-white dark:text-gray-900 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
                     <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
                   </svg>
-                  <span className="text-white/90 dark:text-brown-dark/90">{item}</span>
+                  <span className="text-white/90 dark:text-gray-900/90">{item}</span>
                 </li>
               ))}
             </ul>
@@ -92,7 +92,7 @@ export default function ProblemStatement() {
               href="#diensten"
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
-              className="inline-block px-8 py-4 bg-sand-white dark:bg-brown-dark text-primary dark:text-accent rounded-lg font-semibold hover:bg-sand-light dark:hover:bg-brown-dark/80 transition-colors shadow-lg"
+              className="inline-block px-8 py-4 bg-gray-50 dark:bg-gray-900 text-primary dark:text-accent rounded-lg font-semibold hover:bg-gray-100 dark:hover:bg-gray-900/80 transition-colors shadow-lg"
             >
               Bekijk onze aanpak
             </motion.a>

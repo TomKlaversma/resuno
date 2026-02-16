@@ -16,7 +16,7 @@ export default function Header() {
   ];
 
   return (
-    <header className="fixed top-0 left-0 right-0 z-50 bg-sand-white/80 dark:bg-brown-dark/80 backdrop-blur-md border-b border-brown-dark/10 dark:border-sand-white/10">
+    <header className="fixed top-0 left-0 right-0 z-50 bg-gray-50/80 dark:bg-gray-900/80 backdrop-blur-md border-b border-gray-900/10 dark:border-gray-50/10">
       <nav className="container mx-auto px-6 py-4">
         <div className="flex items-center justify-between">
           {/* Logo */}
@@ -40,7 +40,7 @@ export default function Header() {
                 initial={{ opacity: 0, y: -10 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: index * 0.1 }}
-                className="text-brown-dark dark:text-sand-white hover:text-primary dark:hover:text-accent font-medium transition-colors px-3 py-2"
+                className="text-gray-900 dark:text-gray-50 hover:text-primary dark:hover:text-accent font-medium transition-colors px-3 py-2"
               >
                 {item.name}
               </motion.a>
@@ -54,7 +54,7 @@ export default function Header() {
               transition={{ delay: 0.4 }}
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
-              className="px-6 py-2 bg-primary dark:bg-accent text-white dark:text-brown-dark rounded-lg font-semibold hover:bg-primary-dark dark:hover:bg-accent/90 transition-colors"
+              className="px-6 py-2 bg-primary dark:bg-accent text-white dark:text-gray-900 rounded-lg font-semibold hover:bg-primary-dark dark:hover:bg-accent/90 transition-colors"
             >
               Boek een Scan
             </motion.a>
@@ -70,7 +70,7 @@ export default function Header() {
               aria-label="Toggle menu"
             >
               <svg
-                className="w-6 h-6 text-brown-dark dark:text-sand-white"
+                className="w-6 h-6 text-gray-900 dark:text-gray-50"
                 fill="none"
                 stroke="currentColor"
                 viewBox="0 0 24 24"
@@ -107,7 +107,7 @@ export default function Header() {
               <a
                 key={item.name}
                 href={item.href}
-                className="block py-2 text-brown-dark dark:text-sand-white hover:text-primary dark:hover:text-accent font-medium transition-colors"
+                className="block py-2 text-gray-900 dark:text-gray-50 hover:text-primary dark:hover:text-accent font-medium transition-colors"
                 onClick={() => setMobileMenuOpen(false)}
               >
                 {item.name}
@@ -115,7 +115,7 @@ export default function Header() {
             ))}
             <a
               href="#contact"
-              className="block mt-4 px-6 py-2 bg-primary dark:bg-accent text-white dark:text-brown-dark rounded-lg font-semibold text-center hover:bg-primary-dark dark:hover:bg-accent/90 transition-colors"
+              className="block mt-4 px-6 py-2 bg-primary dark:bg-accent text-white dark:text-gray-900 rounded-lg font-semibold text-center hover:bg-primary-dark dark:hover:bg-accent/90 transition-colors"
               onClick={() => setMobileMenuOpen(false)}
             >
               Boek een Scan

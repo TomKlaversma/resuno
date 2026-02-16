@@ -1,6 +1,6 @@
 export default function Footer() {
   return (
-    <footer className="bg-brown-dark dark:bg-brown-dark text-sand-white py-12">
+    <footer className="bg-gray-900 dark:bg-gray-900 text-gray-50 py-12">
       <div className="container mx-auto px-6">
         <div className="grid md:grid-cols-4 gap-8">
           {/* Brand */}
@@ -10,10 +10,10 @@ export default function Footer() {
                 Resuno
               </span>
             </h3>
-            <p className="text-sand-white/70 mb-4 max-w-md">
+            <p className="text-gray-50/70 mb-4 max-w-md">
               AI Architectuur voor MKB en Startups. Van chaos naar schaalbaar momentum.
             </p>
-            <p className="text-sm text-sand-white/50">
+            <p className="text-sm text-gray-50/50">
               KvK: [Nog in te vullen]<br />
               BTW: [Nog in te vullen]
             </p>
@@ -21,20 +21,20 @@ export default function Footer() {
 
           {/* Quick links */}
           <div>
-            <h4 className="font-semibold mb-4 text-sand-white">Links</h4>
+            <h4 className="font-semibold mb-4 text-gray-50">Links</h4>
             <ul className="space-y-2">
               <li>
-                <a href="#diensten" className="text-sand-white/70 hover:text-accent transition-colors">
+                <a href="#diensten" className="text-gray-50/70 hover:text-accent transition-colors">
                   Diensten
                 </a>
               </li>
               <li>
-                <a href="#over" className="text-sand-white/70 hover:text-accent transition-colors">
+                <a href="#over" className="text-gray-50/70 hover:text-accent transition-colors">
                   Over Resuno
                 </a>
               </li>
               <li>
-                <a href="#contact" className="text-sand-white/70 hover:text-accent transition-colors">
+                <a href="#contact" className="text-gray-50/70 hover:text-accent transition-colors">
                   Contact
                 </a>
               </li>
@@ -43,8 +43,8 @@ export default function Footer() {
 
           {/* Contact */}
           <div>
-            <h4 className="font-semibold mb-4 text-sand-white">Contact</h4>
-            <ul className="space-y-2 text-sand-white/70">
+            <h4 className="font-semibold mb-4 text-gray-50">Contact</h4>
+            <ul className="space-y-2 text-gray-50/70">
               <li>
                 <a href="mailto:tom@resuno.nl" className="hover:text-accent transition-colors">
                   tom@resuno.nl
@@ -69,7 +69,7 @@ export default function Footer() {
         </div>
 
         {/* Bottom bar */}
-        <div className="border-t border-sand-white/20 mt-8 pt-8 text-center text-sand-white/50 text-sm">
+        <div className="border-t border-gray-50/20 mt-8 pt-8 text-center text-gray-50/50 text-sm">
           <p>&copy; {new Date().getFullYear()} Resuno. Alle rechten voorbehouden.</p>
           <p className="mt-2">
             <a href="#" className="hover:text-accent transition-colors">Privacy Policy</a>
