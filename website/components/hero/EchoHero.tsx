@@ -64,7 +64,7 @@ export default function EchoHero() {
             transition={{ duration: 0.8 }}
             className="space-y-8"
           >
-            <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold tracking-tight text-gray-900 dark:text-gray-50 leading-tight">
+            <h1 className="font-display text-5xl md:text-6xl lg:text-7xl font-bold text-gray-900 dark:text-gray-50 leading-tight">
               Van AI-chaos naar{" "}
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-accent">
                 schaalbaar momentum

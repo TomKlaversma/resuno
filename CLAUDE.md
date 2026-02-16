@@ -30,6 +30,34 @@ This is the **Resuno** website and brand project. Resuno is a high-end AI Archit
 * **Animations:** Framer Motion
 * **Deployment:** Vercel
 * **Language:** TypeScript
+* **Typography:** Playfair Display (H1 only) + Inter (everything else)
+
+### Typography Rules - CRITICAL
+
+**Font Pairing: Classic Chic + Modern Tech**
+
+* **Playfair Display:** H1 ONLY (one per page) and logo
+  - Use `font-display` class or `<h1>` (auto-applied)
+  - Classical serif, elegant, luxury feel
+  - NEVER use for body text or multiple headers
+
+* **Inter:** Everything else
+  - H2-H6, body text, buttons, navigation
+  - Modern sans-serif, tech-forward
+  - Default font (no class needed)
+
+**Example:**
+```tsx
+// ✅ Correct
+<h1 className="font-display text-5xl">Main Heading</h1>
+<h2 className="text-3xl">Subheading</h2>
+
+// ❌ Wrong - don't use Playfair for multiple headers
+<h1 className="font-display">Title</h1>
+<h2 className="font-display">Subtitle</h2>
+```
+
+See `/website/TYPOGRAPHY.md` for complete guidelines.
 
 ### Code Standards
 * Use modern React patterns (hooks, server components where appropriate)

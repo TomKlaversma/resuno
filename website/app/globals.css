@@ -39,6 +39,7 @@
   --color-gray-50: var(--gray-50);
   --color-gray-100: var(--gray-100);
   --font-sans: var(--font-inter);
+  --font-display: var(--font-playfair);
 }
 
 body {
@@ -57,4 +58,18 @@ html {
 body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+/* Typography utilities */
+.font-display {
+  font-family: var(--font-playfair), Georgia, serif;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+}
+
+/* H1 should always use display font (Playfair) */
+h1 {
+  font-family: var(--font-playfair), Georgia, serif;
+  font-weight: 700;
+  letter-spacing: -0.02em;
 }

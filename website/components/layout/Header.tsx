@@ -26,7 +26,7 @@ export default function Header() {
             href="#"
             initial={{ opacity: 0, x: -20 }}
             animate={{ opacity: 1, x: 0 }}
-            className="text-2xl font-bold"
+            className="text-2xl font-display font-bold"
           >
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-accent">
               Resuno
