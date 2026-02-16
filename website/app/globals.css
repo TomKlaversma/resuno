@@ -39,7 +39,7 @@
   --color-gray-50: var(--gray-50);
   --color-gray-100: var(--gray-100);
   --font-sans: var(--font-inter);
-  --font-display: var(--font-playfair);
+  --font-display: var(--font-display);
 }
 
 body {
@@ -62,14 +62,14 @@ body {
 
 /* Typography utilities */
 .font-display {
-  font-family: var(--font-playfair), Georgia, serif;
+  font-family: var(--font-display), system-ui, sans-serif;
   font-weight: 700;
-  letter-spacing: -0.02em;
+  letter-spacing: -0.03em;
 }
 
-/* H1 should always use display font (Playfair) */
+/* H1 should always use display font (Bricolage Grotesque) */
 h1 {
-  font-family: var(--font-playfair), Georgia, serif;
+  font-family: var(--font-display), system-ui, sans-serif;
   font-weight: 700;
-  letter-spacing: -0.02em;
+  letter-spacing: -0.03em;
 }
