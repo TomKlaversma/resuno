@@ -51,7 +51,7 @@ export default function EchoHero() {
   const [hoveredEcho, setHoveredEcho] = useState<number | null>(null);
 
   return (
-    <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-gradient-to-br from-gray-50 via-white to-blue-50">
+    <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-gradient-to-br from-sand-white via-sand-light to-accent/10 dark:from-brown-dark dark:via-brown-medium dark:to-brown-dark">
       {/* Background pattern */}
       <div className="absolute inset-0 bg-grid-pattern opacity-[0.02]"></div>
 
@@ -64,14 +64,14 @@ export default function EchoHero() {
             transition={{ duration: 0.8 }}
             className="space-y-8"
           >
-            <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold tracking-tight text-gray-900 leading-tight">
+            <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold tracking-tight text-brown-dark dark:text-sand-white leading-tight">
               Van AI-chaos naar{" "}
-              <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-cyan-500">
+              <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-accent">
                 schaalbaar momentum
               </span>
             </h1>
 
-            <p className="text-xl md:text-2xl text-gray-600 leading-relaxed max-w-2xl">
+            <p className="text-xl md:text-2xl text-brown-dark/80 dark:text-sand-white/80 leading-relaxed max-w-2xl">
               Wij bouwen de architectuur die jouw team versterkt. Veilig, volwassen en zonder houtje-touwtje oplossingen.
             </p>
 
@@ -80,7 +80,7 @@ export default function EchoHero() {
                 href="#contact"
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
-                className="px-8 py-4 bg-blue-600 text-white rounded-lg font-semibold text-lg hover:bg-blue-700 transition-colors shadow-lg shadow-blue-600/30 text-center"
+                className="px-8 py-4 bg-primary dark:bg-accent text-white dark:text-brown-dark rounded-lg font-semibold text-lg hover:bg-primary-dark dark:hover:bg-accent/90 transition-colors shadow-lg shadow-primary/30 dark:shadow-accent/30 text-center"
               >
                 Boek een Resuno Scan
               </motion.a>
@@ -89,27 +89,27 @@ export default function EchoHero() {
                 href="#diensten"
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
-                className="px-8 py-4 bg-white text-gray-900 rounded-lg font-semibold text-lg hover:bg-gray-50 transition-colors border-2 border-gray-200 text-center"
+                className="px-8 py-4 bg-sand-white dark:bg-brown-medium text-brown-dark dark:text-sand-white rounded-lg font-semibold text-lg hover:bg-sand-light dark:hover:bg-brown-dark transition-colors border-2 border-brown-dark/20 dark:border-sand-white/20 text-center"
               >
                 Bekijk Diensten
               </motion.a>
             </div>
 
             {/* Trust indicators */}
-            <div className="pt-8 border-t border-gray-200">
-              <p className="text-sm text-gray-500 mb-4">Vertrouwd door MKB en Tech Startups in Nederland</p>
+            <div className="pt-8 border-t border-brown-dark/20 dark:border-sand-white/20">
+              <p className="text-sm text-brown-dark/60 dark:text-sand-white/60 mb-4">Vertrouwd door MKB en Tech Startups in Nederland</p>
               <div className="flex flex-wrap gap-6 items-center">
                 <div className="flex items-center gap-2">
-                  <svg className="w-5 h-5 text-green-600" fill="currentColor" viewBox="0 0 20 20">
+                  <svg className="w-5 h-5 text-accent dark:text-accent" fill="currentColor" viewBox="0 0 20 20">
                     <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
                   </svg>
-                  <span className="text-sm font-medium text-gray-700">100% GDPR-compliant</span>
+                  <span className="text-sm font-medium text-brown-dark dark:text-sand-white">100% GDPR-compliant</span>
                 </div>
                 <div className="flex items-center gap-2">
-                  <svg className="w-5 h-5 text-green-600" fill="currentColor" viewBox="0 0 20 20">
+                  <svg className="w-5 h-5 text-accent dark:text-accent" fill="currentColor" viewBox="0 0 20 20">
                     <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
                   </svg>
-                  <span className="text-sm font-medium text-gray-700">Nederlandse markt specialist</span>
+                  <span className="text-sm font-medium text-brown-dark dark:text-sand-white">Nederlandse markt specialist</span>
                 </div>
               </div>
             </div>
@@ -137,7 +137,7 @@ export default function EchoHero() {
                 >
                   {/* Placeholder for Tom's photo - will be replaced with actual image */}
                   <div
-                    className="w-full h-full rounded-2xl bg-gradient-to-br from-blue-600 to-cyan-500 shadow-2xl"
+                    className="w-full h-full rounded-2xl bg-gradient-to-br from-primary to-accent dark:from-accent to-primary shadow-2xl"
                     style={{ opacity: echo.opacity }}
                   >
                     {/* Silhouette/photo placeholder */}
@@ -151,10 +151,10 @@ export default function EchoHero() {
                     <motion.div
                       initial={{ opacity: 0, y: 10 }}
                       animate={{ opacity: 1, y: 0 }}
-                      className="absolute -bottom-24 left-1/2 transform -translate-x-1/2 bg-gray-900 text-white px-4 py-3 rounded-lg shadow-xl whitespace-nowrap z-50"
+                      className="absolute -bottom-24 left-1/2 transform -translate-x-1/2 bg-brown-dark dark:bg-sand-white text-sand-white dark:text-brown-dark px-4 py-3 rounded-lg shadow-xl whitespace-nowrap z-50"
                     >
                       <p className="font-semibold text-sm mb-1">{echo.label}</p>
-                      <p className="text-xs text-gray-300 max-w-xs whitespace-normal">{echo.description}</p>
+                      <p className="text-xs text-sand-white/80 dark:text-brown-dark/80 max-w-xs whitespace-normal">{echo.description}</p>
                     </motion.div>
                   )}
                 </motion.div>
@@ -166,12 +166,12 @@ export default function EchoHero() {
                 whileHover={{ scale: 1.02 }}
                 transition={{ type: "spring", stiffness: 300 }}
               >
-                <div className="w-full h-full rounded-2xl bg-gradient-to-br from-blue-600 to-cyan-500 shadow-2xl flex items-center justify-center">
+                <div className="w-full h-full rounded-2xl bg-gradient-to-br from-primary to-accent dark:from-accent to-primary shadow-2xl flex items-center justify-center">
                   {/* Placeholder for Tom's main photo */}
-                  <div className="text-white text-xl font-semibold">Tom</div>
-                  <div className="absolute bottom-4 left-4 right-4 bg-white/90 backdrop-blur-sm rounded-lg p-4">
-                    <p className="text-sm font-semibold text-gray-900">Tom van der Linden</p>
-                    <p className="text-xs text-gray-600">AI Architect & Founder</p>
+                  <div className="text-white dark:text-brown-dark text-xl font-semibold">Tom</div>
+                  <div className="absolute bottom-4 left-4 right-4 bg-sand-white/90 dark:bg-brown-dark/90 backdrop-blur-sm rounded-lg p-4">
+                    <p className="text-sm font-semibold text-brown-dark dark:text-sand-white">Tom van der Linden</p>
+                    <p className="text-xs text-brown-dark/70 dark:text-sand-white/70">AI Architect & Founder</p>
                   </div>
                 </div>
               </motion.div>
@@ -182,7 +182,7 @@ export default function EchoHero() {
               {[...Array(5)].map((_, i) => (
                 <motion.div
                   key={i}
-                  className="absolute w-2 h-2 bg-blue-400/30 rounded-full"
+                  className="absolute w-2 h-2 bg-accent/30 dark:bg-accent/40 rounded-full"
                   style={{
                     left: `${20 + i * 15}%`,
                     top: `${30 + i * 10}%`,
@@ -209,7 +209,7 @@ export default function EchoHero() {
         animate={{ y: [0, 10, 0] }}
         transition={{ duration: 2, repeat: Infinity }}
       >
-        <svg className="w-6 h-6 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <svg className="w-6 h-6 text-brown-dark/40 dark:text-sand-white/40" fill="none" stroke="currentColor" viewBox="0 0 24 24">
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 14l-7 7m0 0l-7-7m7 7V3" />
         </svg>
       </motion.div>

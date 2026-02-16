@@ -1,17 +1,29 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #1a1a1a;
-  --primary: #2563eb;
-  --primary-dark: #1e40af;
-  --accent: #06b6d4;
-  --gray-50: #f9fafb;
-  --gray-100: #f3f4f6;
-  --gray-200: #e5e7eb;
-  --gray-600: #4b5563;
-  --gray-800: #1f2937;
-  --gray-900: #111827;
+  /* Light mode - Sand white backgrounds */
+  --background: #faf8f3;
+  --foreground: #2a1810;
+  --primary: #d97706;        /* Dark orange */
+  --primary-dark: #b45309;   /* Darker orange */
+  --accent: #fbbf24;         /* Yellow */
+  --brown-dark: #3e2723;     /* Super dark brown */
+  --brown-medium: #4e342e;
+  --sand-white: #faf8f3;
+  --sand-light: #fefdfb;
+}
+
+.dark {
+  /* Dark mode - Dark brown backgrounds */
+  --background: #1a0f0a;
+  --foreground: #faf8f3;
+  --primary: #f59e0b;        /* Lighter orange for dark mode */
+  --primary-dark: #d97706;
+  --accent: #fbbf24;
+  --brown-dark: #0a0504;
+  --brown-medium: #1a0f0a;
+  --sand-white: #2a1810;
+  --sand-light: #3e2723;
 }
 
 @theme inline {
@@ -20,6 +32,10 @@
   --color-primary: var(--primary);
   --color-primary-dark: var(--primary-dark);
   --color-accent: var(--accent);
+  --color-brown-dark: var(--brown-dark);
+  --color-brown-medium: var(--brown-medium);
+  --color-sand-white: var(--sand-white);
+  --color-sand-light: var(--sand-light);
   --font-sans: var(--font-inter);
 }
 
@@ -27,6 +43,7 @@ body {
   background: var(--background);
   color: var(--foreground);
   font-family: var(--font-inter), system-ui, -apple-system, sans-serif;
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 /* Smooth scrolling */

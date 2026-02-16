@@ -29,7 +29,7 @@ export default function ContactForm() {
   };
 
   return (
-    <section id="contact" className="py-24 bg-white">
+    <section id="contact" className="py-24 bg-sand-white dark:bg-brown-dark">
       <div className="container mx-auto px-6">
         <div className="max-w-4xl mx-auto">
           {/* Header */}
@@ -40,10 +40,10 @@ export default function ContactForm() {
             transition={{ duration: 0.6 }}
             className="text-center mb-12"
           >
-            <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
-              Klaar voor <span className="text-blue-600">volwassen AI</span>?
+            <h2 className="text-4xl md:text-5xl font-bold text-brown-dark dark:text-sand-white mb-6">
+              Klaar voor <span className="text-primary dark:text-accent">volwassen AI</span>?
             </h2>
-            <p className="text-xl text-gray-600">
+            <p className="text-xl text-brown-dark/70 dark:text-sand-white/70">
               Vul onderstaand formulier in. We filteren op kwaliteit, dus wees zo specifiek mogelijk over jouw situatie.
             </p>
           </motion.div>
@@ -55,12 +55,12 @@ export default function ContactForm() {
             viewport={{ once: true }}
             transition={{ duration: 0.6, delay: 0.2 }}
             onSubmit={handleSubmit}
-            className="bg-gray-50 rounded-2xl p-8 md:p-12 shadow-xl"
+            className="bg-sand-light dark:bg-brown-medium rounded-2xl p-8 md:p-12 shadow-xl border border-brown-dark/10 dark:border-sand-white/10"
           >
             <div className="grid md:grid-cols-2 gap-6 mb-6">
               {/* Name */}
               <div>
-                <label htmlFor="name" className="block text-sm font-semibold text-gray-700 mb-2">
+                <label htmlFor="name" className="block text-sm font-semibold text-brown-dark dark:text-sand-white mb-2">
                   Jouw naam *
                 </label>
                 <input
@@ -70,14 +70,14 @@ export default function ContactForm() {
                   required
                   value={formData.name}
                   onChange={handleChange}
-                  className="w-full px-4 py-3 border-2 border-gray-200 rounded-lg focus:border-blue-600 focus:outline-none transition-colors"
+                  className="w-full px-4 py-3 border-2 border-brown-dark/20 dark:border-sand-white/20 rounded-lg focus:border-primary dark:focus:border-accent focus:outline-none transition-colors"
                   placeholder="Jan Jansen"
                 />
               </div>
 
               {/* Email */}
               <div>
-                <label htmlFor="email" className="block text-sm font-semibold text-gray-700 mb-2">
+                <label htmlFor="email" className="block text-sm font-semibold text-brown-dark dark:text-sand-white mb-2">
                   E-mail *
                 </label>
                 <input
@@ -87,14 +87,14 @@ export default function ContactForm() {
                   required
                   value={formData.email}
                   onChange={handleChange}
-                  className="w-full px-4 py-3 border-2 border-gray-200 rounded-lg focus:border-blue-600 focus:outline-none transition-colors"
+                  className="w-full px-4 py-3 border-2 border-brown-dark/20 dark:border-sand-white/20 rounded-lg focus:border-primary dark:focus:border-accent focus:outline-none transition-colors"
                   placeholder="jan@bedrijf.nl"
                 />
               </div>
 
               {/* Company */}
               <div>
-                <label htmlFor="company" className="block text-sm font-semibold text-gray-700 mb-2">
+                <label htmlFor="company" className="block text-sm font-semibold text-brown-dark dark:text-sand-white mb-2">
                   Bedrijfsnaam *
                 </label>
                 <input
@@ -104,14 +104,14 @@ export default function ContactForm() {
                   required
                   value={formData.company}
                   onChange={handleChange}
-                  className="w-full px-4 py-3 border-2 border-gray-200 rounded-lg focus:border-blue-600 focus:outline-none transition-colors"
+                  className="w-full px-4 py-3 border-2 border-brown-dark/20 dark:border-sand-white/20 rounded-lg focus:border-primary dark:focus:border-accent focus:outline-none transition-colors"
                   placeholder="MijnBedrijf B.V."
                 />
               </div>
 
               {/* Employees */}
               <div>
-                <label htmlFor="employees" className="block text-sm font-semibold text-gray-700 mb-2">
+                <label htmlFor="employees" className="block text-sm font-semibold text-brown-dark dark:text-sand-white mb-2">
                   Aantal medewerkers *
                 </label>
                 <select
@@ -120,7 +120,7 @@ export default function ContactForm() {
                   required
                   value={formData.employees}
                   onChange={handleChange}
-                  className="w-full px-4 py-3 border-2 border-gray-200 rounded-lg focus:border-blue-600 focus:outline-none transition-colors bg-white"
+                  className="w-full px-4 py-3 border-2 border-brown-dark/20 dark:border-sand-white/20 rounded-lg focus:border-primary dark:focus:border-accent focus:outline-none transition-colors bg-white"
                 >
                   <option value="">Selecteer...</option>
                   <option value="1-10">1-10</option>
@@ -134,7 +134,7 @@ export default function ContactForm() {
 
             {/* Current tools */}
             <div className="mb-6">
-              <label htmlFor="currentTools" className="block text-sm font-semibold text-gray-700 mb-2">
+              <label htmlFor="currentTools" className="block text-sm font-semibold text-brown-dark dark:text-sand-white mb-2">
                 Welke AI-tools gebruiken jullie nu? *
               </label>
               <input
@@ -144,14 +144,14 @@ export default function ContactForm() {
                 required
                 value={formData.currentTools}
                 onChange={handleChange}
-                className="w-full px-4 py-3 border-2 border-gray-200 rounded-lg focus:border-blue-600 focus:outline-none transition-colors"
+                className="w-full px-4 py-3 border-2 border-brown-dark/20 dark:border-sand-white/20 rounded-lg focus:border-primary dark:focus:border-accent focus:outline-none transition-colors"
                 placeholder="Bijv: ChatGPT, Notion AI, Zapier, Make..."
               />
             </div>
 
             {/* Challenge */}
             <div className="mb-6">
-              <label htmlFor="challenge" className="block text-sm font-semibold text-gray-700 mb-2">
+              <label htmlFor="challenge" className="block text-sm font-semibold text-brown-dark dark:text-sand-white mb-2">
                 Wat is jouw grootste AI-uitdaging? *
               </label>
               <textarea
@@ -161,14 +161,14 @@ export default function ContactForm() {
                 value={formData.challenge}
                 onChange={handleChange}
                 rows={4}
-                className="w-full px-4 py-3 border-2 border-gray-200 rounded-lg focus:border-blue-600 focus:outline-none transition-colors resize-none"
+                className="w-full px-4 py-3 border-2 border-brown-dark/20 dark:border-sand-white/20 rounded-lg focus:border-primary dark:focus:border-accent focus:outline-none transition-colors resize-none"
                 placeholder="Bijv: Te veel losse tools, geen security oversight, onduidelijke ROI..."
               />
             </div>
 
             {/* Package selection */}
             <div className="mb-8">
-              <label htmlFor="package" className="block text-sm font-semibold text-gray-700 mb-2">
+              <label htmlFor="package" className="block text-sm font-semibold text-brown-dark dark:text-sand-white mb-2">
                 Welk pakket interesseert je? *
               </label>
               <select
@@ -177,7 +177,7 @@ export default function ContactForm() {
                 required
                 value={formData.package}
                 onChange={handleChange}
-                className="w-full px-4 py-3 border-2 border-gray-200 rounded-lg focus:border-blue-600 focus:outline-none transition-colors bg-white"
+                className="w-full px-4 py-3 border-2 border-brown-dark/20 dark:border-sand-white/20 rounded-lg focus:border-primary dark:focus:border-accent focus:outline-none transition-colors bg-white"
               >
                 <option value="scan">Pakket A: De Resuno Scan (€2.000)</option>
                 <option value="foundation">Pakket B: De Foundation Build</option>
@@ -191,12 +191,12 @@ export default function ContactForm() {
               type="submit"
               whileHover={{ scale: 1.02 }}
               whileTap={{ scale: 0.98 }}
-              className="w-full py-4 bg-blue-600 text-white rounded-lg font-semibold text-lg hover:bg-blue-700 transition-colors shadow-lg shadow-blue-600/30"
+              className="w-full py-4 bg-primary dark:bg-accent text-white dark:text-brown-dark rounded-lg font-semibold text-lg hover:bg-primary-dark dark:hover:bg-accent/90 transition-colors shadow-lg shadow-primary/30 dark:shadow-accent/30"
             >
               Verstuur aanvraag
             </motion.button>
 
-            <p className="text-sm text-gray-500 text-center mt-4">
+            <p className="text-sm text-brown-dark/60 dark:text-sand-white/60 text-center mt-4">
               We nemen binnen 24 uur contact op voor een vrijblijvend gesprek.
             </p>
           </motion.form>
@@ -209,13 +209,13 @@ export default function ContactForm() {
             transition={{ duration: 0.6, delay: 0.4 }}
             className="mt-12 text-center"
           >
-            <p className="text-gray-600 mb-4">
+            <p className="text-brown-dark/70 dark:text-sand-white/70 mb-4">
               Liever direct contact?
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <a
                 href="mailto:tom@resuno.nl"
-                className="inline-flex items-center gap-2 text-blue-600 font-semibold hover:text-blue-700 transition-colors"
+                className="inline-flex items-center gap-2 text-primary dark:text-accent font-semibold hover:text-primary-dark dark:hover:text-accent/90 transition-colors"
               >
                 <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
                   <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z" />
@@ -227,7 +227,7 @@ export default function ContactForm() {
                 href="https://linkedin.com/in/tomresuno"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 text-blue-600 font-semibold hover:text-blue-700 transition-colors"
+                className="inline-flex items-center gap-2 text-primary dark:text-accent font-semibold hover:text-primary-dark dark:hover:text-accent/90 transition-colors"
               >
                 <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
                   <path d="M6.29 18.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0020 3.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477A4.073 4.073 0 01.8 7.713v.052a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 010 16.407a11.616 11.616 0 006.29 1.84" />

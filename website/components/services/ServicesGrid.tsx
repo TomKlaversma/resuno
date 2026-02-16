@@ -73,7 +73,7 @@ const itemVariants = {
 
 export default function ServicesGrid() {
   return (
-    <section id="diensten" className="py-24 bg-white">
+    <section id="diensten" className="py-24 bg-sand-white dark:bg-brown-dark">
       <div className="container mx-auto px-6">
         {/* Section header */}
         <motion.div
@@ -83,10 +83,10 @@ export default function ServicesGrid() {
           transition={{ duration: 0.6 }}
           className="text-center mb-16"
         >
-          <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
-            Van chaos naar <span className="text-blue-600">controle</span>
+          <h2 className="text-4xl md:text-5xl font-bold text-brown-dark dark:text-sand-white mb-6">
+            Van chaos naar <span className="text-primary dark:text-accent">controle</span>
           </h2>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+          <p className="text-xl text-brown-dark/70 dark:text-sand-white/70 max-w-3xl mx-auto">
             Drie pakketten, één doel: jouw AI-stack volwassen maken. Kies het niveau dat past bij jouw ambities.
           </p>
         </motion.div>
@@ -108,8 +108,8 @@ export default function ServicesGrid() {
                 relative p-8 rounded-2xl border-2
                 ${
                   service.highlight
-                    ? "border-blue-600 bg-gradient-to-br from-blue-50 to-cyan-50 shadow-xl shadow-blue-600/10"
-                    : "border-gray-200 bg-white hover:border-blue-300"
+                    ? "border-primary dark:border-accent bg-gradient-to-br from-accent/10 to-primary/10 dark:from-accent/20 dark:to-primary/20 shadow-xl shadow-primary/10 dark:shadow-accent/10"
+                    : "border-brown-dark/20 dark:border-sand-white/20 bg-sand-light dark:bg-brown-medium hover:border-primary dark:hover:border-accent"
                 }
                 transition-all duration-300
               `}
@@ -117,7 +117,7 @@ export default function ServicesGrid() {
               {/* Highlight badge */}
               {service.highlight && (
                 <div className="absolute -top-3 left-8">
-                  <span className="px-4 py-1 bg-blue-600 text-white text-xs font-semibold rounded-full shadow-lg">
+                  <span className="px-4 py-1 bg-primary dark:bg-accent text-white dark:text-brown-dark text-xs font-semibold rounded-full shadow-lg">
                     MEEST GEKOZEN
                   </span>
                 </div>
@@ -125,22 +125,22 @@ export default function ServicesGrid() {
 
               {/* Service header */}
               <div className="mb-6">
-                <h3 className="text-2xl font-bold text-gray-900 mb-2">{service.name}</h3>
+                <h3 className="text-2xl font-bold text-brown-dark dark:text-sand-white mb-2">{service.name}</h3>
                 <div className="flex items-baseline gap-2 mb-2">
-                  <span className="text-3xl font-bold text-blue-600">{service.price}</span>
+                  <span className="text-3xl font-bold text-primary dark:text-accent">{service.price}</span>
                 </div>
-                <p className="text-sm text-gray-500">{service.duration}</p>
+                <p className="text-sm text-brown-dark/60 dark:text-sand-white/60">{service.duration}</p>
               </div>
 
               {/* Description */}
-              <p className="text-gray-700 mb-6 leading-relaxed">{service.description}</p>
+              <p className="text-brown-dark/80 dark:text-sand-white/80 mb-6 leading-relaxed">{service.description}</p>
 
               {/* Features list */}
               <ul className="space-y-3 mb-8">
                 {service.features.map((feature, index) => (
                   <li key={index} className="flex items-start gap-3">
                     <svg
-                      className="w-5 h-5 text-green-600 mt-0.5 flex-shrink-0"
+                      className="w-5 h-5 text-accent dark:text-accent mt-0.5 flex-shrink-0"
                       fill="currentColor"
                       viewBox="0 0 20 20"
                     >
@@ -150,7 +150,7 @@ export default function ServicesGrid() {
                         clipRule="evenodd"
                       />
                     </svg>
-                    <span className="text-sm text-gray-700">{feature}</span>
+                    <span className="text-sm text-brown-dark/80 dark:text-sand-white/80">{feature}</span>
                   </li>
                 ))}
               </ul>
@@ -164,8 +164,8 @@ export default function ServicesGrid() {
                   block w-full text-center py-3 px-6 rounded-lg font-semibold transition-all
                   ${
                     service.highlight
-                      ? "bg-blue-600 text-white hover:bg-blue-700 shadow-lg shadow-blue-600/30"
-                      : "bg-gray-900 text-white hover:bg-gray-800"
+                      ? "bg-primary dark:bg-accent text-white dark:text-brown-dark hover:bg-primary-dark dark:hover:bg-accent/90 shadow-lg shadow-primary/30 dark:shadow-accent/30"
+                      : "bg-brown-dark dark:bg-sand-white text-sand-white dark:text-brown-dark hover:bg-brown-dark/90 dark:hover:bg-sand-white/90"
                   }
                 `}
               >
@@ -183,12 +183,12 @@ export default function ServicesGrid() {
           transition={{ duration: 0.6, delay: 0.4 }}
           className="mt-16 text-center"
         >
-          <p className="text-gray-600 mb-4">
+          <p className="text-brown-dark/70 dark:text-sand-white/70 mb-4">
             Niet zeker welk pakket bij jou past? Geen probleem.
           </p>
           <a
             href="#contact"
-            className="inline-flex items-center gap-2 text-blue-600 font-semibold hover:text-blue-700 transition-colors"
+            className="inline-flex items-center gap-2 text-primary dark:text-accent font-semibold hover:text-primary-dark dark:hover:text-accent/90 transition-colors"
           >
             Plan een vrijblijvend gesprek
             <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
