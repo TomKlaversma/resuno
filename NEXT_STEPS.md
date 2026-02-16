@@ -1,18 +1,18 @@
 # Next Steps for Resuno
 
-## ✅ What's Been Completed
+##  What's Been Completed
 
 ### 1. Documentation
-- ✅ **BRAND_VISION.md** - Complete brand vision and technical briefing
-- ✅ **CLAUDE.md** - AI agent instructions for future development
-- ✅ **README.md** - Project overview and getting started guide
+-  **BRAND_VISION.md** - Complete brand vision and technical briefing
+-  **CLAUDE.md** - AI agent instructions for future development
+-  **README.md** - Project overview and getting started guide
 
 ### 2. Website Structure
-- ✅ Next.js 16 with App Router
-- ✅ TypeScript configuration
-- ✅ Tailwind CSS styling
-- ✅ Framer Motion animations
-- ✅ All components built:
+-  Next.js 16 with App Router
+-  TypeScript configuration
+-  Tailwind CSS styling
+-  Framer Motion animations
+-  All components built:
   - Hero section with "Echo of Tom" effect
   - Problem statement section
   - Services grid (bento layout)
@@ -21,13 +21,13 @@
   - Footer
 
 ### 3. GitHub
-- ✅ Repository created: https://github.com/TomKlaversma/resuno
-- ✅ Initial commit pushed to main branch
-- ✅ All files versioned and documented
+-  Repository created: https://github.com/TomKlaversma/resuno
+-  Initial commit pushed to main branch
+-  All files versioned and documented
 
 ---
 
-## 🎯 Immediate Next Steps
+##  Immediate Next Steps
 
 ### 1. Add Your Photo (HIGH PRIORITY)
 The hero section is waiting for your professional photo:
@@ -101,7 +101,7 @@ Review and potentially update:
 
 ---
 
-## 🚀 Quick Commands
+##  Quick Commands
 
 ### Development
 ```bash
@@ -122,7 +122,7 @@ git push             # Push to GitHub
 
 ---
 
-## 🎨 Customization Guide
+##  Customization Guide
 
 ### Colors
 Edit `/website/app/globals.css`:
@@ -140,7 +140,7 @@ Update in `/website/components/services/ServicesGrid.tsx` (line 7-52)
 
 ---
 
-## 📝 Content Writing Tasks
+##  Content Writing Tasks
 
 Based on your original document, you wanted to write:
 
@@ -175,7 +175,7 @@ Based on your original document, you wanted to write:
 
 ---
 
-## 🔧 Technical Improvements (Optional)
+##  Technical Improvements (Optional)
 
 ### Short-term
 - [ ] Add image optimization for Tom's photo
@@ -197,7 +197,7 @@ Based on your original document, you wanted to write:
 
 ---
 
-## 🎯 Marketing Checklist
+##  Marketing Checklist
 
 Before going fully public:
 - [ ] Professional photo in hero section
@@ -211,7 +211,7 @@ Before going fully public:
 
 ---
 
-## 💡 Tips for Success
+##  Tips for Success
 
 ### Content Creation
 - Write as if talking to a pragmatic Dutch MKB owner
@@ -232,7 +232,7 @@ Before going fully public:
 
 ---
 
-## 📞 Need Help?
+##  Need Help?
 
 If you need to modify anything:
 
@@ -250,4 +250,4 @@ The foundation is solid. The messaging is clear. The architecture is scalable.
 
 **Most important next action:** Add your photo and deploy to resuno.nl
 
-Veel succes, Tom! 🚀
+Veel succes, Tom! 

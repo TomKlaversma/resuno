@@ -2,13 +2,13 @@
 
 > AI Architectuur voor MKB en Startups - Van chaos naar schaalbaar momentum
 
-## 📋 Project Overview
+##  Project Overview
 
 Resuno is a high-end AI Architecture Agency targeting SMEs (MKB) and Tech Startups in the Netherlands. We bridge the gap between messy AI experiments and production-grade, scalable operations.
 
 **Core Philosophy:** Resonance - amplifying human intelligence through perfectly orchestrated AI architecture.
 
-## 🗂️ Repository Structure
+##  Repository Structure
 
 ```
 /
@@ -25,7 +25,7 @@ Resuno is a high-end AI Architecture Agency targeting SMEs (MKB) and Tech Startu
 └── README.md               # This file
 ```
 
-## 🚀 Getting Started
+##  Getting Started
 
 ### Prerequisites
 
@@ -60,7 +60,7 @@ npm run build
 npm start
 ```
 
-## 📚 Key Documentation
+##  Key Documentation
 
 ### Required Reading for All Contributors
 
@@ -74,7 +74,7 @@ npm start
 - **USP:** Security as a guardrail for speed
 - **Visual Identity:** "The Echo of Tom" - one architect orchestrating multiple AI capabilities
 
-## 🛠️ Tech Stack
+##  Tech Stack
 
 - **Framework:** Next.js 16 (App Router)
 - **Language:** TypeScript
@@ -98,7 +98,7 @@ npm start
 - Custom software from scratch
 - No plugins/wrappers
 
-## 🎨 Design System
+##  Design System
 
 ### Colors
 - Primary: Blue (#2563eb)
@@ -116,14 +116,14 @@ npm start
 3. **ServicesGrid** - Bento grid layout for 3 packages
 4. **ContactForm** - High-friction lead qualification form
 
-## 🔒 Security & Compliance
+##  Security & Compliance
 
 - GDPR-first approach
 - Zero-trust architecture
 - Data encryption at rest and in transit
 - Private LLM instances (Azure/Cloudflare)
 
-## 📈 SEO Keywords
+##  SEO Keywords
 
 **Primary:**
 - AI Architect
@@ -136,12 +136,12 @@ npm start
 - AI voor startups Nederland
 - AI consultancy Nederland
 
-## 🗺️ Roadmap
+##  Roadmap
 
 ### Phase 1: Q1 2026 (Current)
-- ✅ Website launch (resuno.nl)
-- ⏳ First 3 "Resuno Scan" clients
-- ⏳ Document case studies
+-  Website launch (resuno.nl)
+-  First 3 "Resuno Scan" clients
+-  Document case studies
 
 ### Phase 2: Q2-Q3 2026
 - Build Foundation Build framework
@@ -153,7 +153,7 @@ npm start
 - Product-ize common patterns
 - Consider SaaS offering
 
-## 🤝 Contributing
+##  Contributing
 
 Before making any changes:
 
@@ -162,13 +162,13 @@ Before making any changes:
 3. Ensure all content is in Dutch (for user-facing)
 4. Follow the established tone and messaging
 
-## 📞 Contact
+##  Contact
 
 **Founder:** Tom
 **Email:** tom@resuno.nl
 **LinkedIn:** [linkedin.com/in/tomresuno](https://linkedin.com/in/tomresuno)
 
-## 📄 License
+##  License
 
 Copyright © 2026 Resuno. All rights reserved.
 
